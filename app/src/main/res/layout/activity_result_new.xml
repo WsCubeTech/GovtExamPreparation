@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgLight"
+    android:orientation="vertical"
+    tools:context="com.govt_exam_preparation.activities.ResultActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_15">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/dim_3"
+                app:cardElevation="@dimen/dim_2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dim_12">
+
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dim_120"
+                        android:layout_height="@dimen/dim_120"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:background="@drawable/bg_circle_text_boundary"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.govt_exam_preparation.custom_views.MyTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Total Points"
+                            android:textColor="@color/colorDimPrimary"
+                            android:textSize="@dimen/font_size_14"
+                            />
+
+                        <com.govt_exam_preparation.custom_views.MyTextViewBold
+                            android:id="@+id/txtTotalPoints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dim_3"
+                            android:gravity="center"
+                            android:text="124 points"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/font_size_12"
+                            />
+
+
+                    </LinearLayout>
+
+                    <com.govt_exam_preparation.custom_views.MyTextViewRegular
+                        android:id="@+id/txtTimeTaken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:text="Time Taken: "
+                        android:textColor="@color/colorDimPrimary"
+                        android:textSize="@dimen/font_size_14"/>
+
+                    <RelativeLayout
+                        android:id="@+id/relBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_40"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:background="@drawable/bg_rounded_boundary_blue"
+                        android:paddingLeft="@dimen/dim_9"
+                        android:paddingRight="@dimen/dim_7">
+
+                        <com.govt_exam_preparation.custom_views.MyTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Total Questions"
+                            android:textColor="@color/colorDimPrimary"
+                            android:textSize="@dimen/font_size_12"/>
+
+                        <com.govt_exam_preparation.custom_views.MyTextViewBold
+                            android:id="@+id/txtTotal"
+                            android:layout_width="@dimen/dim_25"
+                            android:layout_height="@dimen/dim_25"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_circle_blue"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/font_size_12"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relGreen"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_40"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:background="@drawable/bg_rounded_boundary_green"
+                        android:paddingLeft="@dimen/dim_9"
+                        android:paddingRight="@dimen/dim_7">
+
+                        <com.govt_exam_preparation.custom_views.MyTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Total Correct"
+                            android:textColor="@color/colorDimPrimary"
+                            android:textSize="@dimen/font_size_12"/>
+
+                        <com.govt_exam_preparation.custom_views.MyTextViewBold
+                            android:id="@+id/txtCorrect"
+                            android:layout_width="@dimen/dim_25"
+                            android:layout_height="@dimen/dim_25"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_circle_green"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/font_size_12"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relRed"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_40"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:background="@drawable/bg_rounded_boundary_red"
+                        android:paddingLeft="@dimen/dim_9"
+                        android:paddingRight="@dimen/dim_7">
+
+                        <com.govt_exam_preparation.custom_views.MyTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Total Incorrect"
+                            android:textColor="@color/colorDimPrimary"
+                            android:textSize="@dimen/font_size_12"/>
+
+                        <com.govt_exam_preparation.custom_views.MyTextViewBold
+                            android:id="@+id/txtIncorrect"
+                            android:layout_width="@dimen/dim_25"
+                            android:layout_height="@dimen/dim_25"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_circle_red"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/font_size_12"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relSkip"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_40"
+                        android:layout_marginTop="@dimen/dim_10"
+                        android:background="@drawable/bg_rounded_boundary_skip"
+                        android:paddingLeft="@dimen/dim_9"
+                        android:paddingRight="@dimen/dim_7">
+
+                        <com.govt_exam_preparation.custom_views.MyTextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Total Skipped"
+                            android:textColor="@color/colorDimPrimary"
+                            android:textSize="@dimen/font_size_12"/>
+
+                        <com.govt_exam_preparation.custom_views.MyTextViewBold
+                            android:id="@+id/txtSkipped"
+                            android:layout_width="@dimen/dim_25"
+                            android:layout_height="@dimen/dim_25"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_circle_skip"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/font_size_12"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/linRetakeReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_15"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/linRetake"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_90"
+                    android:layout_marginRight="@dimen/dim_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_grey_curve_boundary_selector"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dim_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_32"
+                        android:layout_height="@dimen/dim_32"
+                        android:layout_gravity="center"
+                        android:src="@drawable/retake_image"/>
+
+                    <com.govt_exam_preparation.custom_views.MyTextViewBold
+                        android:id="@+id/txtRetake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dim_9"
+                        android:text="Retake"
+                        android:textSize="@dimen/font_size_16"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linReview"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_90"
+                    android:layout_marginLeft="@dimen/dim_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_grey_curve_boundary_selector"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dim_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_32"
+                        android:layout_height="@dimen/dim_32"
+                        android:layout_gravity="center"
+                        android:src="@drawable/review_image"/>
+
+                    <com.govt_exam_preparation.custom_views.MyTextViewBold
+                        android:id="@+id/txtReview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dim_9"
+                        android:text="Review"
+                        android:textSize="@dimen/font_size_16"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

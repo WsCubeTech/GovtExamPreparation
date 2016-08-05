@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Splash_Activity"
+    android:background="@drawable/splash">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_32"
+            android:text="@string/government"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/dim_18"
+            android:text="@string/exan_prepatation"
+            android:textColor="@color/colorWhite"
+            />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/seekbar"
+        android:layout_width="@dimen/dim_253"
+        android:layout_height="@dimen/dim_16"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dim_60"
+        android:layout_marginRight="@dimen/dim_10"
+        android:layout_marginLeft="@dimen/dim_10"
+        style="@style/CustomProgressBar" />
+
+</RelativeLayout>

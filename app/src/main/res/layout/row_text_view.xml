@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.govt_exam_preparation.custom_views.MyTextViewRegular xmlns:android="http://schemas.android.com/apk/res/android"
+                                                          android:layout_width="match_parent"
+                                                          android:layout_height="@dimen/dim_45"
+                                                          android:background="@drawable/bg_selector_trans_normal"
+                                                          android:gravity="center_vertical"
+                                                          android:paddingLeft="@dimen/dim_5"
+                                                          android:paddingRight="@dimen/dim_5"
+                                                          android:paddingTop="@dimen/dim_5"
+                                                          android:text="One"
+                                                          android:textColor="#AA000000"
+                                                          android:textSize="@dimen/dim_14"
+                                                          android:textStyle="bold"/>
+

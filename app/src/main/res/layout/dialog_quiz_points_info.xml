@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dim_280"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_curve"
+    android:padding="@dimen/dim_10">
+
+    <com.govt_exam_preparation.custom_views.MyTextViewBold
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Quiz Points Info"
+        android:textColor="@color/colorDimPrimary"
+        android:textSize="@dimen/font_size_18"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_15"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:orientation="vertical">
+
+            <com.govt_exam_preparation.custom_views.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Points: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/font_size_14"/>
+
+            <com.govt_exam_preparation.custom_views.MyTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="for each correct answer"
+                android:textColor="@color/colorDimPrimary"
+                android:textSize="@dimen/font_size_11"/>
+
+        </LinearLayout>
+
+        <com.govt_exam_preparation.custom_views.MyTextViewBold
+            android:id="@+id/txtPointsCorrect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="right"
+            android:text=""
+            android:paddingRight="@dimen/dim_3"
+            android:textColor="@color/colorDarkGreen"
+            android:textSize="@dimen/font_size_16"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_15"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:orientation="vertical">
+
+            <com.govt_exam_preparation.custom_views.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Points: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/font_size_14"/>
+
+            <com.govt_exam_preparation.custom_views.MyTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="for each wrong answer"
+                android:textColor="@color/colorDimPrimary"
+                android:textSize="@dimen/font_size_11"/>
+
+        </LinearLayout>
+
+        <com.govt_exam_preparation.custom_views.MyTextViewBold
+            android:id="@+id/txtPointsWrong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="right"
+            android:text=""
+            android:paddingRight="@dimen/dim_3"
+            android:textColor="@color/colorDarkRed"
+            android:textSize="@dimen/font_size_16"/>
+
+
+    </LinearLayout>
+
+    <com.govt_exam_preparation.custom_views.MyTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_15"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dim_5"
+        android:text="You can also skip the question by not selecting any option"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/dim_12"/>
+
+    <com.govt_exam_preparation.custom_views.MyTextViewBold
+        android:id="@+id/txtOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim_2"
+        android:background="@drawable/btn_selector_rounded_trans"
+        android:padding="@dimen/dim_10"
+        android:text="OK"/>
+
+</LinearLayout>

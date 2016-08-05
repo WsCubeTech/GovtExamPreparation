@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0172ff</item>
+        <item name="colorPrimaryDark">#0066e6</item>
+        <item name="android:typeface">monospace</item>
+
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/styled_progress</item>
+        <item name="android:minHeight">@dimen/dim_10</item>
+        <item name="android:maxHeight">@dimen/dim_20</item>
+    </style>
+
+    <style name="MyOverlayTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorSecondary">#ffffff</item>
+
+        <item name="colorControlNormal">#fff</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ToolbarTheme" parent="AppTheme">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:textColorSecondary">#fff</item>
+        <item name="colorControlNormal">#fff</item>
+    </style>
+
+    <style name="TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/font_size_12</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextInputLayoutError" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/dim_10</item>
+        <item name="android:textColor">@color/colorDarkRed</item>
+    </style>
+
+</resources>

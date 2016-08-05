@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#fff"
+              tools:context=".activities.Notification_Detail">
+
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="@dimen/dim_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/imgNotification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_230"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/banner_registration"/>
+
+
+            <ImageView
+                android:id="@+id/logo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_250"
+                android:background="@color/colorWrongAns"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/post_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/dim_5"
+                android:layout_marginTop="@dimen/dim_10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/job_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dim_5"
+                        android:text="Date"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_size_12"/>
+
+                    <TextView
+                        android:id="@+id/job_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/job_date"
+                        android:padding="@dimen/dim_5"
+                        android:text="Title"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dim_14"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dim_5"
+                    android:text="Description"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/font_size_14"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_1"
+                    android:layout_marginBottom="@dimen/dim_2"
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:background="@color/colorCircleBorder"/>
+
+            </LinearLayout>
+
+            <!--<ListView-->
+            <!--android:id="@+id/job_details_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/post_layout"-->
+            <!--android:divider="@null"-->
+            <!--/>-->
+
+            <RelativeLayout
+                android:id="@+id/description_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/job_details_layout">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_1"
+
+                    android:background="@color/colorDivider"/>
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_marginTop="@dimen/dim_10"
+
+                    android:paddingRight="@dimen/dim_10"
+
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="@dimen/dim_12"/>
+
+
+            </RelativeLayout>
+
+
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/post_layout"
+                  android:layout_marginTop="@dimen/dim_10"
+                  android:orientation="vertical">
+
+                  <LinearLayout
+                      android:id="@+id/last_date_layout"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+
+                      <RelativeLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/dim_10"
+                          android:background="@drawable/circle">
+
+                          <ImageView
+                              android:layout_width="@dimen/dim_13"
+                              android:layout_height="@dimen/dim_14"
+                              android:background="@drawable/last_date_icon"
+                              android:layout_centerInParent="true"/>
+
+                      </RelativeLayout>
+
+                      <TextView
+
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:layout_gravity="center_vertical"
+                          android:paddingLeft="@dimen/dim_10"
+                          android:paddingRight="@dimen/dim_5"
+                          android:text="Last Date : "
+                          android:textColor="@color/colorDashboardText"
+                          android:textSize="@dimen/dim_16" />
+
+                      <TextView
+
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:layout_gravity="center_vertical"
+                          android:paddingLeft="@dimen/dim_10"
+                          android:paddingRight="@dimen/dim_5"
+                          android:text="March 12, 2016"
+                          android:textColor="@color/colorDarkGrey"
+                          android:textSize="@dimen/dim_16" />
+
+                   </LinearLayout>
+
+                  <LinearLayout
+                      android:id="@+id/eligibility_layout"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/dim_10"
+                      android:orientation="horizontal">
+
+                      <RelativeLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/dim_10"
+                          android:background="@drawable/circle">
+
+                          <ImageView
+                              android:layout_width="@dimen/dim_13"
+                              android:layout_height="@dimen/dim_17"
+                              android:background="@drawable/eligibility_icon"
+                              android:layout_centerInParent="true"/>
+
+                      </RelativeLayout>
+
+                      <TextView
+
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:layout_gravity="center_vertical"
+                          android:paddingLeft="@dimen/dim_10"
+                          android:paddingRight="@dimen/dim_5"
+                          android:text="Eligibility : "
+                          android:textColor="@color/colorDashboardText"
+                          android:textSize="@dimen/dim_16" />
+
+                      <TextView
+
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:layout_gravity="center_vertical"
+                          android:paddingLeft="@dimen/dim_10"
+                          android:paddingRight="@dimen/dim_5"
+                          android:text="March 12, 2016"
+                          android:textColor="@color/colorDarkGrey"
+                          android:textSize="@dimen/dim_16" />
+
+                  </LinearLayout>
+
+
+                  <LinearLayout
+                      android:id="@+id/eligibility_layout"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/dim_10"
+                      android:orientation="horizontal">
+
+                      <RelativeLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/dim_10"
+                          android:background="@drawable/circle">
+
+                          <ImageView
+                              android:layout_width="@dimen/dim_13"
+                              android:layout_height="@dimen/dim_17"
+                              android:background="@drawable/eligibility_icon"
+                              android:layout_centerInParent="true"/>
+
+                      </RelativeLayout>
+
+                      <TextView
+
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:layout_gravity="center_vertical"
+                          android:paddingLeft="@dimen/dim_10"
+                          android:paddingRight="@dimen/dim_5"
+                          android:text="Eligibility : "
+                          android:textColor="@color/colorDashboardText"
+                          android:textSize="@dimen/dim_16" />
+
+                      <TextView
+
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:layout_gravity="center_vertical"
+                          android:paddingLeft="@dimen/dim_10"
+                          android:paddingRight="@dimen/dim_5"
+                          android:text="March 12, 2016"
+                          android:textColor="@color/colorDarkGrey"
+                          android:textSize="@dimen/dim_16" />
+
+                  </LinearLayout>
+               </LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dim_10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.govt_exam_preparation.custom_views.MyTextViewBold
+            android:id="@+id/txtSelectCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_size_14"/>
+
+        <RelativeLayout
+            android:id="@+id/relCitySelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector_trans_normal"
+            android:padding="@dimen/dim_10">
+
+            <com.govt_exam_preparation.custom_views.MyTextViewBold
+                android:id="@+id/txtCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Jodhpur"
+                android:textColor="@color/colorDimPrimary"
+                android:textSize="@dimen/font_size_14"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.govt_exam_preparation.custom_views.MyTextViewBold
+            android:id="@+id/txtSelectExam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exam"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_size_14"/>
+
+        <RelativeLayout
+            android:id="@+id/relExamSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector_trans_normal"
+            android:padding="@dimen/dim_10">
+
+            <com.govt_exam_preparation.custom_views.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="RAS I"
+                android:id="@+id/txtExam"
+                android:textColor="@color/colorDimPrimary"
+                android:textSize="@dimen/font_size_14"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.govt_exam_preparation.custom_views.MyTextViewBold
+            android:id="@+id/txtSelectSubjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subjects"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_size_14"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

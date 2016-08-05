@@ -1,0 +1,90 @@
+<LinearLayout android:id="@+id/main_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".activities.Exam_Instructions">
+
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="@dimen/dim_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dim_9">
+
+            <ImageView
+                android:id="@+id/imgExamPreparationBanner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_230"
+                android:scaleType="fitXY"
+                android:src="@drawable/exam_preparation_image"/>
+
+            <com.govt_exam_preparation.custom_views.MyTextViewRegular
+                android:id="@+id/instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim_10"
+                android:text=""
+                android:textColor="@color/colorDimPrimary"
+                android:textSize="@dimen/font_size_14"
+                android:visibility="gone"/>
+
+            <com.govt_exam_preparation.custom_views.MyTextViewBold
+                android:id="@+id/txtExamName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_marginTop="@dimen/dim_5"
+                android:gravity="center"
+                android:text="Exam Name: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/font_size_16"/>
+
+            <com.govt_exam_preparation.custom_views.MyTextViewBold
+                android:id="@+id/txtHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_marginTop="@dimen/dim_10"
+                android:gravity="center"
+                android:text="Select Subject and Proceed"
+                android:textColor="@color/colorDimPrimary"
+                android:textSize="@dimen/font_size_14"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"/>
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@drawable/selector_button_blue"
+                android:text="@string/ok"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_size_16"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

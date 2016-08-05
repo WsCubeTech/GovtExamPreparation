@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativePopUp"
+    android:layout_width="@dimen/dim_280"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dim_40"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/fbicon"
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/selector_dlt_button"
+                    android:padding="@dimen/dim_23"
+                    android:src="@drawable/ic_fb"
+                    android:tint="#fff" />
+
+              <!--  <TextView
+                    android:id="@+id/txtEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_20"
+                    android:layout_below="@+id/fbicon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:text="Fb"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/dim_12" />
+-->
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/twittericon"
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/selector_dlt_button"
+                    android:padding="@dimen/dim_23"
+                    android:src="@drawable/ic_twitter"
+                    android:tint="#fff" />
+
+                <!--<TextView
+                    android:id="@+id/txtDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_20"
+                    android:layout_below="@+id/twittericon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:text="Twitter"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/dim_12" />-->
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@+id/ll1"
+            android:layout_marginTop="@dimen/dim_20">
+
+            <RelativeLayout
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/linkdinicon"
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/selector_dlt_button"
+                    android:padding="@dimen/dim_23"
+                    android:src="@drawable/linkedin"
+                    android:tint="#fff" />
+
+                <!--  <TextView
+                      android:id="@+id/txtEdit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/dim_20"
+                      android:layout_below="@+id/fbicon"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginTop="@dimen/dim_8"
+                      android:text="Fb"
+                      android:textColor="#fff"
+                      android:textSize="@dimen/dim_12" />
+  -->
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/googleicon"
+                    android:layout_width="@dimen/dim_70"
+                    android:layout_height="@dimen/dim_70"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/selector_dlt_button"
+                    android:padding="@dimen/dim_23"
+                    android:src="@drawable/ic_google_plus"
+                    android:tint="#fff" />
+
+                <!--C62A2A-->
+
+                <!--<TextView
+                    android:id="@+id/txtDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_20"
+                    android:layout_below="@+id/twittericon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:text="Twitter"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/dim_12" />-->
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

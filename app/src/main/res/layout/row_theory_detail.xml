@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        android:layout_marginTop="@dimen/dim_10"
+        app:cardCornerRadius="@dimen/dim_3"
+        app:cardElevation="@dimen/dim_3"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:id="@+id/linParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_7"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgTheory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_photo_gallery"/>
+
+            <com.govt_exam_preparation.custom_views.MyTextViewBold
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dim_7"
+                android:paddingRight="@dimen/dim_7"
+                android:paddingTop="@dimen/dim_7"
+                android:text="Title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/font_size_16"/>
+
+            <!--<com.govt_exam_preparation.custom_views.MyTextViewRegular
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dim_7"
+                android:paddingRight="@dimen/dim_7"
+                android:paddingTop="@dimen/dim_7"
+                android:text="Description"
+                android:textColor="@color/colorDimPrimary"
+                android:textSize="@dimen/font_size_16"/>-->
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dim_15"
+    android:paddingRight="@dimen/dim_15"
+    android:paddingTop="@dimen/dim_15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.govt_exam_preparation.custom_views.MyTextViewRegular
+            android:id="@+id/txtSubjectName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="1.9"
+            android:text="Subject Name"
+            android:textColor="@color/colorDimPrimary"
+            android:textSize="@dimen/font_size_16"/>
+
+        <ImageView
+            android:id="@+id/imgTick"
+            android:layout_width="@dimen/dim_24"
+            android:layout_height="@dimen/dim_24"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_check_box_black_24dp"
+            android:tint="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1"
+        android:layout_marginTop="@dimen/dim_15"
+        android:background="@color/colorGrey"/>
+
+</LinearLayout>

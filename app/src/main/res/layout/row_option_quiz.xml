@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relParent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dim_5"
+    android:layout_marginRight="@dimen/dim_5"
+    android:layout_marginTop="@dimen/dim_5"
+    android:background="@drawable/bg_white_curve"
+    android:orientation="horizontal"
+    android:padding="@dimen/dim_10">
+
+    <com.govt_exam_preparation.custom_views.MyTextViewRegular
+        android:id="@+id/txtOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/imgMyInput"
+        android:gravity="center"
+        android:maxLines="5"
+        android:minLines="3"
+        android:text="Option1"
+        android:textColor="@color/colorDimPrimary"
+        android:textSize="@dimen/font_size_16"/>
+
+    <ImageView
+        android:id="@+id/imgMyInput"
+        android:layout_width="@dimen/dim_18"
+        android:layout_height="@dimen/dim_18"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dim_3"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        android:tint="#fff"/>
+
+</RelativeLayout>

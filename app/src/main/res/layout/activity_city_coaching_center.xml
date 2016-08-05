@@ -1,0 +1,125 @@
+<LinearLayout android:id="@+id/main_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".activities.City_Coaching_Center">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dim_10">
+
+            <ImageView
+                android:id="@+id/logo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_250"
+                android:background="@drawable/coaching_center_image"/>
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_layout"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_20"
+                android:text="City"
+                android:textColor="@color/colorDashboardText"
+                android:textSize="@dimen/dim_14"/>
+
+            <FrameLayout
+                android:id="@+id/cityframe"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_40"
+                android:layout_below="@+id/tv_city"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_10">
+
+                <Spinner
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_below="@+id/tv_city"
+                    android:background="@drawable/bg_edittext"
+                    android:spinnerMode="dropdown"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_marginRight="@dimen/dim_5"
+                    android:background="@android:drawable/arrow_down_float"
+                    android:tint="@color/colorDashboardText"/>
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/tv_near_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cityframe"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_20"
+                android:text="Near Me"
+                android:textColor="@color/colorDashboardText"
+                android:textSize="@dimen/dim_14"/>
+
+            <TextView
+                android:id="@+id/tv_lat_long"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_40"
+                android:layout_below="@+id/tv_near_me"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dim_8"
+                android:textColor="@color/colorDashboardText"
+                android:textSize="@dimen/dim_14"/>
+
+            <Button
+                android:id="@+id/current_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_40"
+                android:layout_below="@+id/tv_lat_long"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@drawable/selector_button_blue"
+                android:text="@string/my_current_location"
+                android:textColor="@color/colorWhite"/>
+
+
+            <Button
+                android:id="@+id/find_now"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_40"
+                android:layout_below="@+id/current_location"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@drawable/selector_button_blue"
+                android:paddingBottom="@dimen/dim_5"
+                android:text="@string/find_now"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

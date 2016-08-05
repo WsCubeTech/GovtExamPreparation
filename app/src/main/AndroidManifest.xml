@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.govt_exam_preparation"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+    <permission
+        android:name="com.govt_exam_preparation.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.govt_exam_preparation.permission.C2D_MESSAGE"/>
+
+    <application
+        android:name="com.govt_exam_preparation.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.govt_exam_preparation.activities.Splash_Activity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".QuesAnsActivity"></activity> -->
+        <activity
+            android:name="com.govt_exam_preparation.activities.RegistrationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.govt_exam_preparation.activities.AboutUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.govt_exam_preparation.activities.Dashboard_Activity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.govt_exam_preparation.activities.Jobs_List"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.govt_exam_preparation.activities.Jobs_List_Details"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.govt_exam_preparation.activities.Coaching_Center_List"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.govt_exam_preparation.activities.Coaching_Center_Detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.govt_exam_preparation.activities.Exam_Preparation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.govt_exam_preparation.activities.Follow_Us"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.govt_exam_preparation.activities.Share"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.govt_exam_preparation.activities.City_Coaching_Center"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            tools:replace="android:value"/>
+
+        <activity
+            android:name="com.govt_exam_preparation.activities.Exam_Instructions"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.govt_exam_preparation.activities.Webview_Activity"
+            android:screenOrientation="portrait"/>
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            tools:replace="android:value"/>
+
+        <activity
+            android:name="com.govt_exam_preparation.activities.Notification"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+
+                <category android:name="com.govt_exam_preparation"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService"/>
+
+        <activity
+            android:name="com.govt_exam_preparation.activities.Notification_Detail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.govt_exam_preparation.activities.QuizActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.govt_exam_preparation.activities.ResultActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.govt_exam_preparation.activities.ReviewQuizViewPagerActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.govt_exam_preparation.activities.TheoryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.govt_exam_preparation.activities.TheoryDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+        <activity
+            android:name="com.govt_exam_preparation.activities.FavoritesActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.govt_exam_preparation.activities.LoginActivity">
+        </activity>
+    </application>
+
+</manifest>

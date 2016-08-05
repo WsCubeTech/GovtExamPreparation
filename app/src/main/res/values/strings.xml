@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">YPExam</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_dashboard_">Dashboard_Activity</string>
+    <string name="title_activity_jobs__list">Jobs_List</string>
+    <string name="title_activity_about__us">About_Us</string>
+    <string name="title_activity_jobs__list__details">Jobs_List_Details</string>
+    <string name="title_activity_coaching__center__list">Coaching_Center_List</string>
+    <string name="title_activity_coaching__center__details">Coaching_Center_Details</string>
+    <string name="title_activity_login">Login</string>
+
+    <string name="government">GOVERNMENT</string>
+    <string name="exan_prepatation">EXAM PREPARATION</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="login">LOGIN</string>
+    <string name="reset">RESET</string>
+    <string name="about_us">About Us</string>
+    <string name="jobs">Vacancies</string>
+    <string name="coaching_center">Coaching Center</string>
+    <string name="exam_preparation">Exam Preparation</string>
+    <string name="favourite">Favorites</string>
+    <string name="share">Share</string>
+    <string name="follow_us">Follow_Us</string>
+    <string name="government_exam_preparation">Government Exam Preparation</string>
+    <string name="title_activity_jobs">Jobs</string>
+    <string name="title_activity_exam__preparation">Exam_Preparation</string>
+    <string name="title_activity_follow__us">Follow_Us</string>
+    <string name="title_activity_share">Share</string>
+    <string name="title_activity_favourite">Favourite</string>
+    <string name="title_activity_city__coaching__center">City_Coaching_Center</string>
+    <string name="my_current_location">My Current Location</string>
+    <string name="find_now">Find Now</string>
+    <string name="title_activity_exam__instructions">Exam_Instructions</string>
+    <string name="ok">Proceed</string>
+    <string name="title_activity_result_">Result_Activity</string>
+    <string name="review">Review</string>
+    <string name="retake">Retake</string>
+    <string name="title_activity_review_">Review_Activity</string>
+    <string name="coaching_center_detail">Coaching Center Detail</string>
+    <string name="title_activity_webview_">Webview_Activity</string>
+    <string name="title_activity_comprehension">Comprehension</string>
+    <string name="title_activity_otp_">OTP_Activity</string>
+    <string name="title_activity_in_app_billing">InAppBillingActivity</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_notification__detail">Notification_Detail</string>
+
+    <string-array name="dashboard_titles">
+        <item>About us</item>
+        <item>Jobs</item>
+        <item>Coaching Centre</item>
+        <item>Exam Preparation</item>
+        <item>Favorites</item>
+        <item>Share</item>
+        <item>Follow us</item>
+        <item>Notifications</item>
+    </string-array>
+
+    <string name="instructions">
+        1. Questions shall be asked from the “Space Information Booklet” which has been uploaded on SUPARCO website. It has been sent by courier to Govt. Schools.\n\n2. 60% Questions shall be asked from the Space Information Booklet and 40 questions shall be from sources other than the booklet.\n\n3. Multiple Choice Questions with four options will be asked.\n\n4. Rules shall be read out before each round.\n\n5. Answer should be given only after the question options have be read out.\n\n6. Correct answer shall only be accepted if answered within the given time limit (before the buzzer rings).\n\n7. Questions shall be asked twice.\n\n8. All questions are to be answered except in the Tie Breaker
+    </string>
+
+    <string name="connectionError">Please check your internet connection</string>
+
+    <string name="checkConnection">Please check your internet connection</string>
+    <string name="networkError">Some network error occurred</string>
+
+    <!--google account in use for push notification
+    nileshwscube@gmail.com
+    wscube123321-->
+    <string name="server_key">AIzaSyBfN77Af6MvdBSm7VrmSmkEfu6Ke-EY4FQ</string>
+    <string name="project_number">550635059300</string>
+
+
+</resources>

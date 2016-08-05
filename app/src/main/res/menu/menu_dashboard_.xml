@@ -1,0 +1,12 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.Dashboard_Activity">
+
+    <item
+        android:id="@+id/itemLogOut"
+        android:icon="@drawable/ic_power_settings_new_white_24dp"
+        android:title="Log in"
+        app:showAsAction="always"/>
+</menu>
